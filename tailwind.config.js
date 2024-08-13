@@ -6,7 +6,13 @@ module.exports = {
       fontFamily: {
         varela: '"Varela Round", sans-serif;',
       },
+      keyframes: {
+        moving: {
+          '0%': { transform: "translateX(110%)" },
+          "100%": { transform: "translateX(-250%)" },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
