@@ -11,21 +11,21 @@
 </head>
 
 <body class="m-auto font-varela max-w-screen-2xl bg-orange-50">
- 
+
   <header class="relative">
-    
+
     <div id="top-navbar-container"
       class="justify-between flex items-center fixed top-0 py-2 right-0 left-0 w-full bg-gradient-to-b from-orange-500 to-orange-300 z-50">
       <div id="logo-container" class="ml-5">
         <img src="./media/image/logo.png" alt="logo" class="w-28 md:w-32">
       </div>
-  
+
       <span id="bars" class="fa-solid fa-bars mr-5 md:text-xl"></span>
     </div>
 
     <div id="bottom-navbar-container"
       class=" flex items-center justify-center mt-24 fixed right-0 left-0 bg-gradient-to-b from-orange-300 to-orange-50 top-6 w-full py-2 z-50 md:py-5 md:text-xl md:mt-28 xl:mt-24">
-      
+
       <form class="flex items-center w-full mx-5 h-10">
         <label for="search" class="mr-1 font-bold">Search</label>
         <input id="search" type="text" placeholder="Search dogs or locations..."
@@ -33,15 +33,31 @@
       </form>
     </div>
   </header>
-  
-  <main class="mt-44 md:mt-56 xl:mt-52">
-    <div class="flex items-center justify-center bg-orange-50 z-50">
+
+  <main class=" overflow-hidden mt-44 md:mt-56 xl:mt-52 p-4">
+    <div class="flex flex-col items-center justify-center bg-orange-50 z-50 group cursor-pointer">
+
+      <div class="w-full sm:flex items-center text-xs text-center md:flex flex-row-reverse md:text-xl">
+
+        <div class=" py-2 leading-5 font-bold sm:animate-[moving_20s_linear_infinite] group-hover:paused">
+          <span class="fa-solid fa-bullhorn"></span>Attention Pet Owners! <span class="fa-solid fa-bullhorn"></span>
+
+          Send The Dog ID To The Number When You Click
+
+          <span
+            class="rounded-full text-white bg-orange-500 shadow-md shadow-gray-900 p-1 mt-3 hover:text-orange-500 hover:bg-white hover:border border-orange-500 transition duration-200 ease-linear">Adopt
+            <span class="fa-solid fa-bone"></span>
+          </span>
+        </div>
+
+      </div>
+
       <div
         class="font-bold flex justify-center items-center py-3 bg-orange-500 rounded-md shadow-gray-400 shadow text-white  w-[90%] md:py-5 md:text-xl ">
         Available Dogs<span class="fa-solid fa-paw ml-2"></span>
       </div>
     </div>
-    
+
     <div id="product-container"
       class="grid items-center justify-center px-2 w-full mb-4  gap-10 sm:grid-cols-2 md:px-20 lg:grid-cols-3 lg:px-10 xl:grid-cols-3 xl:px-32 2xl:grid-cols-4 2xl:px-20">
     </div>
