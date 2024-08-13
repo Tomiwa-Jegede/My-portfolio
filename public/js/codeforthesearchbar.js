@@ -5,13 +5,13 @@ export function codetosearch() {
   search.addEventListener("input", (event) => {
     const userInput = event.target.value.toLowerCase();
     const filteredList = products.filter((product) => {
-      return product.name.toLowerCase().includes(userInput) || product.location.toLowerCase().includes(userInput) || product.age.toLowerCase().includes(userInput);
+      return product.name.toLowerCase().includes(userInput) || product.location.toLowerCase().includes(userInput)
     });
 
     let filteredListHTML = "";
     filteredList.forEach((product) => {
-      filteredListHTML += 
-      `<div id="product" class="w-80">
+      filteredListHTML +=
+        `<div id="product" class="w-80">
     <div class="display my-4 shadow-md w-60 translate-x-10 rounded-lg">
         <iframe class="rounded-lg shadow-md" src="${product.video}" width="100%" allowfullscreen></iframe>
     </div>

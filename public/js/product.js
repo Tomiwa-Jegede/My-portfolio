@@ -5,8 +5,9 @@ export const products = [
     age: "8 Weeks",
     sex: "Both",
     location: "Lagos( Ikotun)",
-    price: "80,000",
+    price: "70,000",
     id: "PET-DOG-001-AE",
+    about:"https://youtu.be/9dE5kNIt0ss?si=L6aqz2DbiJOUU94r"
   },
   {
     video:"https://drive.google.com/file/d/1Bhqo7vQunIkrHCI6wC7uTymrOBefuQ1m/preview",
@@ -47,7 +48,7 @@ export const products = [
   {
     video:"https://drive.google.com/file/d/1Bhqo7vQunIkrHCI6wC7uTymrOBefuQ1m/preview",
     name: "American Eskimo",
-    age: "8 Weeks",
+    age: "5 Weeks",
     sex: "Both",
     location: "Lagos( Ikotun)",
     price: "80,000",
