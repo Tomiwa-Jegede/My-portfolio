@@ -6,7 +6,7 @@ productHTML +=
  `<div id="product" class="w-80">
     <div class="display my-4 shadow-md w-56 translate-x-10  relative overflow-hidden">
 
-      <video class="video-container" class="flex w-full rounded-lg">
+      <video class="video-container flex w-full rounded-lg">
         <source src="./media/video/Eskimo.mp4" type="video/mp4">
       </video>
 
