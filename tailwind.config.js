@@ -11,6 +11,13 @@ module.exports = {
           '0%': { transform: "translateX(110%)" },
           "100%": { transform: "translateX(-250%)" },
         },
+        change: {
+          '0%': {color:"white"},
+          "50%": {color:"orange"},
+          '100%': {color:"white"},
+          
+        },
+
       },
     },
   },

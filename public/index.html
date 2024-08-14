@@ -10,7 +10,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
-<body class="m-auto font-varela max-w-screen-2xl bg-orange-50">
+<body class="m-auto font-varela max-w-screen-2xl bg-orange-50 relative">
+
+  <div
+    class="pageloader fixed bg-orange-200 bottom-0 top-0 right-0 left-0 z-[100] flex flex-col items-center justify-center">
+
+    <div class="text-white items-center justify-center w-full text-[100%] md:text-[300%] gap-3 flex py-3">
+      <span class="fa-solid fa-paw animate-[change_2s_linear_.1s_infinite]"></span>
+      <span class="fa-solid fa-paw animate-[change_2s_linear_.2s_infinite]"></span>
+      <span class="fa-solid fa-paw animate-[change_2s_linear_.3s_infinite]"></span>
+      <span class="fa-solid fa-paw animate-[change_2s_linear_.4s_infinite]"></span>
+    </div>
+
+    <div class="text-white text-center w-full md:text-[200%] py-3 font-bold">
+      Fetching Your Furry Friend...
+    </div>
+
+  </div>
 
   <header class="relative">
 

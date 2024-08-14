@@ -10,7 +10,7 @@ products.forEach((product) => {
 
     <div>
       <div class="mb-4">
-       <span class="font-bold">Name:</span> <a href="${product.about}"><span class="transiton duration-200 ease-in-out hover:text-orange-500 hover:font-bold">${product.name}</span></a>
+       <span class="font-bold">Name:</span> <a href="${product.about}" target="blank"><span class="transiton duration-200 ease-in-out hover:text-orange-500 hover:font-bold">${product.name}</span></a>
       </div>
 
       <div class="mb-4">
@@ -37,10 +37,10 @@ products.forEach((product) => {
 
           
         </div>
-    <a href="https://wa.me/message/WUS7G3SB7NX5J1">
+    <a href="https://wa.me/message/WUS7G3SB7NX5J1" target="blank">
       <button
         class="rounded-full text-white bg-orange-500 shadow-md shadow-gray-900 p-2 mt-3 hover:text-orange-500 hover:bg-white hover:border border-orange-500 transition duration-200 ease-linear">Adopt <span class="fa-solid fa-bone"></span>
-      </button>
+      </button> 
     </a>
   </div>`;
 });
