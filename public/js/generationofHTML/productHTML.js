@@ -18,7 +18,7 @@ products.forEach((product) => {
       <div class="mb-2"><span class="font-bold">Sex:</span> <span>${product.sex}</span></div>
       <span class="font-bold mb-4">Vaccinated</span>
   </div>
-  <div class="mt-4 mb-4"><span class="font-bold">Price:</span> <span>${product.price}</span></div>
+  <div class="mt-4 mb-4"><span class="font-bold">Price:</span> <span>₦${product.price}</span></div>
   <div class="mb-4"><span class="font-bold">Dog ID:</span> <span>${product.id}</span></div>
   <div class="leading-5 font-bold text-red-600">
       <span class="fa-solid fa-bullhorn"></span>
