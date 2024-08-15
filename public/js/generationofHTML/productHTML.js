@@ -24,7 +24,7 @@ products.forEach((product) => {
       <span class="fa-solid fa-bullhorn"></span>
       <span>Attention Pet Owners!</span>
       <p class="fa-solid fa-bullhorn"></p>
-      <p>You Can Click The Dogs Name For More Info About Breed. Send The Dog ID To The Number When You Click Adopt</p>
+      <p>You Can Click The Dog's Name For More Info About Breed. Send The Dog ID To The Number When You Click Adopt</p>
   </div>
   <div class="flex items-center justify-center">
       <a href="https://wa.me/message/WUS7G3SB7NX5J1" target="blank" class="w-80">

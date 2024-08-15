@@ -89,6 +89,16 @@ export const products = [
     id: "SECURITY-DOG-001-GSD",
     about: "https://youtu.be/p0INBNLqmPE?si=Y_mhqG0uAbnhCeHg"
   },
+  {
+    video: "https://drive.google.com/file/d/1R54LLARQHXAaB9dzggCGAwK0MafZMvPO/preview",
+    name: "Chow Chow",
+    age: "7 weeks",
+    sex: "Both",
+    location: "Akure",
+    price: "500,000",
+    id: "PET-DOG-001-CHOW",
+    about: "https://youtu.be/ohy21_csQyc?si=tR_ml0Gvk9t-N-n-"
+  },
 
 
 ]
