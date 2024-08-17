@@ -99,6 +99,26 @@ export const products = [
     id: "PET-DOG-001-CHOW",
     about: "https://youtu.be/ohy21_csQyc?si=tR_ml0Gvk9t-N-n-"
   },
+  {
+    video: "https://drive.google.com/file/d/15xXnrhQgpxXN7Fq1G8G30Pr_zDLsWleG/preview",
+    name: "Caucasian Sherpherd",
+    age: "6 weeks",
+    sex: "Female",
+    location: "Jos",
+    price: "320,000",
+    id: "SECURITY-DOG-002-CCS",
+    about: "https://youtu.be/ohy21_csQyc?si=tR_ml0Gvk9t-N-n-"
+  },
+  {
+    video: "https://drive.google.com/file/d/1NitfJg-hr1ysNj4gexpCANmXil75BZ77/preview",
+    name: "Caucasian Sherpherd",
+    age: "7 weeks",
+    sex: "Male",
+    location: "Jos",
+    price: "300,000",
+    id: "SECURITY-DOG-002-CCS",
+    about: "https://youtu.be/ohy21_csQyc?si=tR_ml0Gvk9t-N-n-"
+  },
 
 
 ]
