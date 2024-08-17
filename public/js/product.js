@@ -20,7 +20,7 @@ export const products = [
     about: "https://youtu.be/8Qx2hxI29Vk?si=XL7_9VJhlTb866qe"
   },
   {
-    video: "https://drive.google.com/file/d/10JGKnWKWclwDGLUJqao1XjiqHCmIitWf/preview",
+    video: "https://drive.google.com/file/d/1VMwlM5NmyiUjv8m8t_waOZJTK_3MdQxq/preview",
     name: "Pitbull",
     age: "6 Weeks",
     sex: "Male",
