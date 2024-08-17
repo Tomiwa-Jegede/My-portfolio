@@ -116,8 +116,18 @@ export const products = [
     sex: "Male",
     location: "Jos",
     price: "300,000",
-    id: "SECURITY-DOG-002-CCS",
+    id: "SECURITY-DOG-001-CCS",
     about: "https://youtu.be/ohy21_csQyc?si=tR_ml0Gvk9t-N-n-"
+  },
+  {
+    video: "https://drive.google.com/file/d/1FzYFNZmC-4Ed4JC2PKqwwUaxu0AUoL0H/preview",
+    name: "French Bulldog",
+    age: "6 weeks",
+    sex: "Both",
+    location: "Lagos(Surulare)",
+    price: "650,000/750,000",
+    id: "PET-DOG-001-FH",
+    about: "https://youtu.be/8lyPyFhpaYU?si=zAdIPzqOCjxjYixE"
   },
 
 
