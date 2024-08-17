@@ -20,14 +20,14 @@ export function codetosearch() {
   <div
     class="pageLoader-2 absolute rounded-lg bg-orange-300 bottom-0 top-0 right-0 left-0 flex flex-col items-center justify-center">
 
-    <div class="text-white items-center justify-center w-full text-[100%] md:text-[300%] gap-3 flex py-3">
+    <div class="text-white items-center justify-center w-full gap-3 flex py-3">
       <span class="fa-solid fa-paw animate-[change_2s_linear_.1s_infinite]"></span>
       <span class="fa-solid fa-paw animate-[change_2s_linear_.2s_infinite]"></span>
       <span class="fa-solid fa-paw animate-[change_2s_linear_.3s_infinite]"></span>
       <span class="fa-solid fa-paw animate-[change_2s_linear_.4s_infinite]"></span>
     </div>
 
-    <div class="text-white text-center w-full md:text-[200%] py-3 font-bold">
+    <div class="text-white text-center w-full py-3 font-bold">
       Fetching Your Furry Friend...
     </div>
 
