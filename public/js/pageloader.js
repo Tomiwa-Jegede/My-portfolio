@@ -1,6 +1,9 @@
-export function pageLoader(){
-  const pageloader =document.querySelector(".pageloader")
-window.addEventListener("load",()=>{
-  pageloader.style.display="none"
-})
+export function pageLoader() {
+  const pageLoader = document.querySelector(".pageloader")
+  
+  window.addEventListener("load", () => {
+    pageLoader.style.display = "none"
+  })
+
+  
 }

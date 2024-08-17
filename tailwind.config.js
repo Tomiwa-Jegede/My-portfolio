@@ -13,7 +13,7 @@ module.exports = {
         },
         change: {
           '0%': {color:"white"},
-          "50%": {color:"orange"},
+          "50%": {color:"brown"},
           '100%': {color:"white"},
           
         },
