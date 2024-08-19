@@ -203,7 +203,7 @@ export const products = [
     video: "https://drive.google.com/file/d/1_OMl1dEQv2hNtwHDjrHakMwrHMFWQAIX/preview",
     name: "BoerBoel",
     age: "8 Weeks",
-    sex: "Male",
+    sex: "Both",
     location: "Lagos (Ikorodu)",
     price: "200,000",
     id: "SECURITY-DOG-001-BB",
