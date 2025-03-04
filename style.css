@@ -1,0 +1,225 @@
+:root{
+  --primary-color:black;
+  --secondary-color:#1CAC78;
+  --secondary-color-light:#00CC81;
+  --secondary-color-light-opacity:#00cc8117;
+  --grey-white-color: #dadada;
+  --grey-color:#6b7280;
+  --grey-color-opacity: #6b728059;
+  --grey-color-opacity2: #6b72801e;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color:white;
+}
+body{
+  font-family:"Poppins", serif;
+  background-color:var(--primary-color);
+  height:100vh;
+}
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 40px;
+  font-size:1.5rem;
+  margin-bottom:4rem;
+}
+/*--page-1----*/
+main.page-1{
+  padding:20px 40px;
+  height:70vh;
+}
+
+.logo_name{
+color:var(--secondary-color);
+font-weight: 800;
+}
+button{
+  padding:20px;
+  color: var(--primary-color);
+  border-radius:7px;
+  background-color: var(--secondary-color);
+  border:none;
+  cursor:pointer;
+}
+.see-my-work-btn:hover{
+  transform:scale(1.02);
+  background-color:var(--secondary-color-light)
+}
+.aboutme-btn:hover{
+  transform:scale(1.02);
+  background-color:var(--secondary-color-light-opacity)
+}
+.aboutme-btn{
+  background-color: var(--primary-color);
+  border:1px solid var(--secondary-color);
+  color:var(--secondary-color);
+}
+h4{
+  color:var(--grey-white-color);
+  margin-bottom:1.5rem;
+}
+h1{
+  margin-bottom:1rem;
+}
+h1{
+  margin-bottom:1.5rem;
+}
+h4 span{
+  color:var(--secondary-color);
+}
+h1 span{
+  color:var(--grey-color);
+}
+.what-i-do{
+  margin-bottom:2rem;
+}
+/*---page-2---*/
+main.page-2{
+  padding:20px 40px;
+}
+main.page-2 h4{
+  color:var(--grey-white-color);
+  border-bottom:1px solid var(--grey-color-opacity);
+}
+main.page-2 .aboutme-body{
+margin-bottom:4rem;
+}
+
+.Experiences-container{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:2rem;
+  width:20rem ;
+  height:20rem;
+  align-self:center;
+  justify-self:center;
+}
+.Experiences-container div{
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--grey-color-opacity);
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background-color:var(--grey-color-opacity2);
+  font-size:12px;
+}
+.Experiences-container div:hover{
+  animation:bounce .7s linear 1;
+}
+@keyframes bounce{
+  0%{transform:scale(1)}
+  25%{transform:scale(1.1)}
+  50%{transform:scale(1)}
+  75%{transform:scale(1.05)}
+  100%{transform:scale(1)}
+}
+.Experiences-container div span{
+font-size:2rem;
+font-weight:700
+}
+/*---page-3---*/
+main.page-3{
+  padding:20px 40px;
+}
+main.page-3 .front-end-container{
+  border:1px solid var(--grey-color-opacity);
+  padding:10px 30px;
+  border-radius:10px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  background-color:var(--grey-color-opacity2);
+}
+
+main.page-3 .front-end-container{
+  border:1px solid var(--grey-color-opacity);
+  padding:10px 30px;
+  border-radius:10px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  background-color:var(--grey-color-opacity2);
+  transform:translateY(-8px)
+}
+main.page-3 .front-end-container:hover{
+  animation:jump .7s linear 1;
+}
+.fa-laptop-code{
+  margin:2rem 0;
+}
+.front-end-developer{
+  margin-bottom:1.2rem ;
+}
+@keyframes jump{
+  0%{transform:translateY(-8px)}
+  25%{transform:translateY(-12px)}
+  50%{transform:translateY(-8px)}
+  75%{transform:translateY(-10px)}
+  100%{transform:translateY(-8px)}
+}
+/*--page-4---*/
+main.page-4{
+  padding:20px 40px;
+}
+main.page-4 h4{
+  color:var(--grey-white-color);
+  border-bottom:1px solid var(--grey-color-opacity);
+}
+main.page-4 header{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  font-size:15px;
+  margin: 0;
+  cursor: pointer;
+  border-radius:10px;
+}
+main.page-4 header:hover{
+ background-color: var(--grey-color-opacity2);
+}
+main.page-4 .fa-briefcase{
+color:var(--secondary-color);
+font-size:22px;
+margin-right:10px;
+}
+main.page-4 .arrow{
+transform:rotate(180deg);
+cursor:pointer;
+}
+
+main.page-4 .page-4-container{
+  padding:0px 0px;
+  overflow:hidden;
+  height:0px;
+  border-bottom:1px solid var(--grey-color-opacity);
+}
+/*---page-5---*/
+main.page-5{
+  position:relative;
+  border:red 1px solid;
+  height:70vh;
+}
+main.page-5 .navigation-btn{
+  position:absolute;
+  border:red 1px solid;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  top:50%
+}
+main.page-5 .navigation-btn button{
+border-radius:50%;
+height:20px;
+width:20px;
+display:flex;
+align-items:center;
+justify-content: center;
+}
