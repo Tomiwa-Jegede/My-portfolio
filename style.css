@@ -1,5 +1,6 @@
 :root{
-  --primary-color:black;
+  --primary-color:rgb(16, 16, 16);
+  --primary-color-light:rgb(30, 30, 30);
   --secondary-color:#1CAC78;
   --secondary-color-light:#00CC81;
   --secondary-color-light-opacity:#00cc8117;
@@ -19,23 +20,41 @@ body{
   background-color:var(--primary-color);
   height:100vh;
 }
-header{
+.nav-bar{
+  background-color: var(--primary-color-light);
   display:flex;
   align-items:center;
   justify-content:space-between;
   padding:20px 40px;
   font-size:1.5rem;
   margin-bottom:4rem;
+  position:fixed;
+  right:0;
+  left:0;
+  top:0;
+  z-index: 1000;
+}
+main{
+  padding:20px 40px;
+  animation:fade .5s ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+.fa-solid{
+  color:black;
 }
 /*--page-1----*/
 main.page-1{
-  padding:20px 40px;
+  margin-top:11rem;
   height:70vh;
 }
 
 .logo_name{
 color:var(--secondary-color);
 font-weight: 800;
+}
+.nav-bar button{
+    padding:12px;
 }
 button{
   padding:20px;
@@ -78,9 +97,6 @@ h1 span{
   margin-bottom:2rem;
 }
 /*---page-2---*/
-main.page-2{
-  padding:20px 40px;
-}
 main.page-2 h4{
   color:var(--grey-white-color);
   border-bottom:1px solid var(--grey-color-opacity);
@@ -107,6 +123,7 @@ margin-bottom:4rem;
   border-radius:50%;
   background-color:var(--grey-color-opacity2);
   font-size:12px;
+  animation:bounce .7s linear 1;
 }
 .Experiences-container div:hover{
   animation:bounce .7s linear 1;
@@ -118,14 +135,15 @@ margin-bottom:4rem;
   75%{transform:scale(1.05)}
   100%{transform:scale(1)}
 }
+@keyframes fade{
+  from{opacity:0}
+  to{opacity:1}
+}
 .Experiences-container div span{
 font-size:2rem;
 font-weight:700
 }
 /*---page-3---*/
-main.page-3{
-  padding:20px 40px;
-}
 main.page-3 .front-end-container{
   border:1px solid var(--grey-color-opacity);
   padding:10px 30px;
@@ -165,8 +183,8 @@ main.page-3 .front-end-container:hover{
   100%{transform:translateY(-8px)}
 }
 /*--page-4---*/
-main.page-4{
-  padding:20px 40px;
+main.page-4 h2{
+  margin:0 0 2rem 0;
 }
 main.page-4 h4{
   color:var(--grey-white-color);
@@ -180,6 +198,7 @@ main.page-4 header{
   margin: 0;
   cursor: pointer;
   border-radius:10px;
+  padding:1.5rem;
 }
 main.page-4 header:hover{
  background-color: var(--grey-color-opacity2);
@@ -189,9 +208,8 @@ color:var(--secondary-color);
 font-size:22px;
 margin-right:10px;
 }
-main.page-4 .arrow{
-transform:rotate(180deg);
-cursor:pointer;
+main.page-4 .fa-angle-down,.fa-laptop-code{
+color:white;
 }
 
 main.page-4 .page-4-container{
@@ -203,23 +221,37 @@ main.page-4 .page-4-container{
 /*---page-5---*/
 main.page-5{
   position:relative;
-  border:red 1px solid;
-  height:70vh;
+  height: 70vh;
 }
 main.page-5 .navigation-btn{
   position:absolute;
-  border:red 1px solid;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  width:100%;
-  top:50%
+  top:50%;
+  right:10%;
+  left:10%;
 }
 main.page-5 .navigation-btn button{
-border-radius:50%;
-height:20px;
-width:20px;
-display:flex;
-align-items:center;
-justify-content: center;
+  border-radius:50%;
+  height:20px;
+  width:20px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding:1rem;
+  background-color: var(--grey-color);
+}
+main.page-5 .img-container{
+  width:50%;
+  align-self:center;
+  justify-self:center;
+}
+main.page-5 .img-slider{
+  display:flex;
+  width:100%;
+  overflow:hidden;
+}
+main.page-5 .img-slider img{
+ width:100%
 }
