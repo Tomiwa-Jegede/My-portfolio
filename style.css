@@ -35,6 +35,7 @@ body{
   z-index: 1000;
 }
 main{
+  z-index:500;
   padding:20px 40px;
   animation:fade .5s ease-in-out both;
   animation-timeline: view();
@@ -62,6 +63,99 @@ a{
     align-items:center;
     justify-content:space-between;
   }
+
+  body{
+    font-size:1.2rem;
+  }
+  .animation-container{
+    position:absolute;
+    display:flex;
+    right:0;
+    left:0;
+    justify-content:space-between;
+
+  }
+.animation-container div{
+  margin-right:2rem;
+  height:15rem;
+  width:15rem;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color:var(--grey-color-opacity);
+}
+.animation-container div:nth-child(1){
+  animation:anime1 5s linear infinite
+
+}
+.animation-container div:nth-child(2){
+  animation:anime2 7s linear infinite
+}
+.animation-container div:nth-child(3){
+  animation:anime3 5s linear infinite
+}
+.animation-container div:nth-child(4){
+  animation:anime4 5s linear infinite
+}
+.animation-container div:nth-child(5){
+  animation:anime5 5s linear infinite
+}
+.animation-container div:nth-child(6){
+  animation:anime6 10s linear infinite
+}
+.animation-container div:nth-child(){
+  margin-right:2rem;
+  height:10rem;
+  width:10rem;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color:var(--grey-color-opacity)
+}
+@keyframes anime1{
+  0%{transform:translateY(-500%);
+    opacity:1
+  }
+  100%{transform:translateY(90%) translateX(700%) rotate(360deg);
+  opacity:0
+  }
+}
+@keyframes anime2{
+  0%{transform:translateX(500%);
+    opacity:0
+  }
+  100%{transform:translateY(-200%) translateX(-500%) rotate(360deg);
+  opacity:1
+  }
+}
+@keyframes anime3{
+  0%{transform:translateY(90%);
+    opacity:0
+  }
+  100%{transform:translateY(-500%)  rotate(360deg);
+  opacity:1
+  }
+}
+@keyframes anime4{
+  0%{transform:translateY(-500%);
+    opacity:1
+  }
+  100%{transform: translateY(90%) rotate(360deg);
+  opacity:0
+  }
+}
+@keyframes anime5{
+  0%{transform:translateX(50%);
+    opacity:0
+  }
+  100%{transform:translateY(-500%) translateX(-700%) rotate(360deg);
+  opacity:1
+  }
+}
+@keyframes anime6{
+  0%{transform:translateX(-700%);
+    opacity:0
+  }
+  100%{transform:translateY(-500%) translateX(50%) rotate(360deg);
+  opacity:1
+  }
+}
 }
 
 .socials i.fa-download {
@@ -151,6 +245,10 @@ margin-bottom:4rem;
     height:11.2rem;
     align-self:center;
     justify-self:center;
+  }
+
+  body{
+    font-size:1.8rem;
   }
 }
 .Experiences-container div{
@@ -389,5 +487,9 @@ main.page-6 img{
   animation-timeline:view();
   animation-range: entry 50% cover 50%;
   transition:all .3s ease-in-out;
+}
+
+body{
+  font-size:1.5rem;
 }
 }
