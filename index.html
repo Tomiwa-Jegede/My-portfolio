@@ -19,7 +19,12 @@
 <body>
   <header class="nav-bar">
     <div class="logo_name">Tomiwa.J</div>
-    <button class="download_button">Download Resume</button>
+    <div class="socials">
+      <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <button class="download_button">Download Resume <i class="fa-solid fa-download"></i></button>
+    </div>
   </header>
   <main class="page-1">
     <h4><span>01.</span>Hi there, I'm</h4>
@@ -41,10 +46,10 @@
       ullam maiores tempora consequatur perferendis, minus cupiditate doloribus vitae voluptatibus enim voluptatem ipsa
       laborum voluptates quam. Perferendis, quae!</div>
     <div class="Experiences-container">
-      <div><span>4+</span>Years of Experience</div>
-      <div><span>4+</span>Years of Experience</div>
-      <div><span>4+</span>Years of Experience</div>
-      <div><span>4+</span>Years of Experience</div>
+      <div><span data-count="5">0</span>Years of Experience</div>
+      <div><span data-count="20">0</span>Years of Experience</div>
+      <div><span data-count="7">0</span>Years of Experience</div>
+      <div><span data-count="30">0</span>Years of Experience</div>
     </div>
   </main>
   <main class="page-3">
@@ -71,15 +76,43 @@
     <h1>Technologies I work with</h1>
     <div class="img-container">
       <div class="img-slider">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+        <img class="active" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
         <img src="	https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
       </div>
+      <div class="indicator-container">
+        <div class="active indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+      </div>
+      <div class="navigation-btn">
+        <button class="nav-right-btn"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="nav-left-btn"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
     </div>
-    <div class="navigation-btn">
-      <button class="nav-left-btn"><i class="fa-solid fa-angle-left"></i></button>
-      <button class="nav-right-btn"><i class="fa-solid fa-angle-right"></i></button>
+  </main>
+  <main class="page-6">
+    <h4><span>05. </span>Projects I Have Worked On</h4>
+    <h1>My Works And Projects</h1>
+    <div class="project-container">
+      <img src="/img/Screenshot 2025-03-07 at 18.31.42.png" alt="">
+      <div class="project-content">
+        <h3>My Works And Projects</h3>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatum distinctio architecto vitae
+          temporibus alias error optio quia, ad ab maiores veniam odit quisquam, tempora voluptates rem molestias
+          necessitatibus accusamus.</div>
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>JS</button>
+        <div>
+          <a class="view-project" href="target">
+            <i class="fa-solid fa-up-right-from-square"></i>
+            View Project
+          </a>
+        </div>
+      </div>
     </div>
   </main>
   <script src="/index.js"></script>
