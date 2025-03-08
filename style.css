@@ -156,6 +156,11 @@ a{
   opacity:1
   }
 }
+
+.indicator-container div{
+  width:20px;
+  height:20px
+}
 }
 
 .socials i.fa-download {
@@ -249,6 +254,10 @@ margin-bottom:4rem;
 
   body{
     font-size:1.8rem;
+  }
+
+  .img-slider{
+    width:33.6%;
   }
 }
 .Experiences-container div{
@@ -463,8 +472,8 @@ main.page-6 h3{
   background-color:var(--secondary-color);
 }
 .indicator-container div{
-  height:10px;
-  width:10px;
+  height:clamp(10px, 2vw, 20px);
+  width:clamp(10px, 2vw, 20px);
   border-radius:50%;
   border:1px solid var(--secondary-color);
 }
