@@ -100,7 +100,6 @@ let currentIndex = 0;
 
 function updateIndicator() {
   currentIndex = currentIndex++;
-  console.log(currentIndex);
   indicator.forEach((ind) => {
     ind.classList.remove('active');
     indicator[currentIndex].classList.add('active');
