@@ -17,13 +17,18 @@ main.page-5 .navigation-btn button{
   padding:1rem;
   background-color: var(--grey-color);
 }
+
+main.page-5 .img-container-main{
+  display:flex;
+  justify-content:center;
+}
+
 main.page-5 .img-container{
   width:50%;
-  align-self:center;
-  justify-self:center;
   overflow:hidden;
   position:relative;
 }
+
 main.page-5 .img-slider{
   display:flex;
   transition:all .5s ease-in-out;
