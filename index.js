@@ -63,8 +63,8 @@ startAutoSliding();
 
 down_arrow.addEventListener('click', () => {
 
-  if (page4container.style.height === '120px') { page4container.style.height = '0px' }
-  else { page4container.style.height = '120px' }
+  if (page4container.style.height === '260px') { page4container.style.height = '0px' }
+  else { page4container.style.height = '260px' }
 })
 
 

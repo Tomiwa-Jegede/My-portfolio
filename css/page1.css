@@ -1,0 +1,53 @@
+/*--page-1----*/
+main.page-1{
+  margin-top:11rem;
+  height:70vh;
+}
+
+.logo_name{
+color:var(--secondary-color);
+font-weight: 800;
+}
+.nav-bar button{
+    padding:12px;
+}
+button{
+  padding:20px;
+  color: var(--primary-color);
+  border-radius:7px;
+  background-color: var(--secondary-color);
+  border:none;
+  cursor:pointer;
+}
+.see-my-work-btn:hover{
+  transform:scale(1.02);
+  background-color:var(--secondary-color-light)
+}
+.aboutme-btn:hover{
+  transform:scale(1.02);
+  background-color:var(--secondary-color-light-opacity)
+}
+.aboutme-btn{
+  background-color: var(--primary-color);
+  border:1px solid var(--secondary-color);
+  color:var(--secondary-color);
+}
+h4{
+  color:var(--grey-white-color);
+  margin-bottom:1.5rem;
+}
+h1{
+  margin-bottom:1rem;
+}
+h1{
+  margin-bottom:1.5rem;
+}
+h4 span{
+  color:var(--secondary-color);
+}
+h1 span{
+  color:var(--grey-color);
+}
+.what-i-do{
+  margin-bottom:2rem;
+}
