@@ -190,11 +190,6 @@ a{
   }
 }
 
-.indicator-container div{
-  width:20px;
-  height:20px
-}
-
 main .Experiences-main{
   display:flex;
   justify-content:center;

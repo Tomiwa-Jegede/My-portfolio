@@ -69,12 +69,7 @@ main.page-6 h3{
 .indicator-container .active{
   background-color:var(--secondary-color);
 }
-.indicator-container div{
-  height:clamp(10px, 2vw, 20px);
-  width:clamp(10px, 2vw, 20px);
-  border-radius:50%;
-  border:1px solid var(--secondary-color);
-}
+
 main.page-6 img{
   width:100%;
   object-fit: contain;

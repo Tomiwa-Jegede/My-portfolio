@@ -37,3 +37,10 @@ main.page-5 .img-slider img{
  width:100%;
  object-fit: contain;
 }
+
+.indicator-container div{
+  height:clamp(5px, 2vw, 20px);
+  width:clamp(5px, 2vw, 20px);
+  border-radius:50%;
+  border:1px solid var(--secondary-color);
+}
