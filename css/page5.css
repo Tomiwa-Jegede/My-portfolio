@@ -24,7 +24,7 @@ main.page-5 .img-container-main{
 }
 
 main.page-5 .img-container{
-  width:50%;
+  width:40%;
   overflow:hidden;
   position:relative;
 }
@@ -35,4 +35,5 @@ main.page-5 .img-slider{
 }
 main.page-5 .img-slider img{
  width:100%;
+ object-fit: contain;
 }
