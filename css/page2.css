@@ -12,10 +12,10 @@ margin-bottom:4rem;
 
 .Experiences-container{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:repeat(1,1fr);
   grid-gap:2rem;
-  width:20rem ;
-  height:20rem;
+  width:10rem ;
+  height:34rem;
   align-self:center;
   justify-self:center;
 }
