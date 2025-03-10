@@ -3,12 +3,38 @@ main.page-1{
   margin-top:11rem;
   height:70vh;
 }
+main.page-1 h4{
+  transform: translateY(20px);
+  opacity:0;
+  animation:slidein .3s ease-in-out forwards;
+}
+main.page-1 h1{
+  transform: translateY(20px);
+  opacity:0;
+  animation:slidein .3s .2s linear forwards;
+}
+main.page-1 .what-i-do{
+  transform: translateY(20px);
+  opacity:0;
+  animation:slidein .3s .5s linear forwards;
+}
+main.page-1 button{
+  transform: translateY(20px);
+  opacity:0;
+  animation:slidein .3s .8s linear forwards;
+}
 
 .logo_name{
-color:var(--secondary-color);
-font-weight: 800;
+  transform: translateY(20px);
+  opacity:0;
+  animation:slidein .3s 1.1s linear forwards;
+  color:var(--secondary-color);
+  font-weight: 800;
 }
 .nav-bar button{
+  transform: translateY(20px);
+  opacity:0;
+  animation:slidein .3s 1.3s linear forwards;
     padding:12px;
 }
 button{
