@@ -1,0 +1,46 @@
+main.page-5 .navigation-btn{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  top:50%;
+  right:0;
+  left:0;
+}
+main.page-5 .navigation-btn button{
+  border-radius:50%;
+  height:20px;
+  width:20px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding:1rem;
+  background-color: var(--grey-color);
+}
+
+main.page-5 .img-container-main{
+  display:flex;
+  justify-content:center;
+}
+
+main.page-5 .img-container{
+  width:40%;
+  overflow:hidden;
+  position:relative;
+}
+
+main.page-5 .img-slider{
+  display:flex;
+  transition:all .5s ease-in-out;
+}
+main.page-5 .img-slider img{
+ width:100%;
+ object-fit: contain;
+}
+
+.indicator-container div{
+  height:clamp(5px, 2vw, 20px);
+  width:clamp(5px, 2vw, 20px);
+  border-radius:50%;
+  border:1px solid var(--secondary-color);
+}
