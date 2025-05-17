@@ -16,3 +16,7 @@
 .nav-bar .logo_name span {
   color: var(--grey-white-color);
 }
+
+.socials .mode .fa-moon{
+  color: #4a4a42;
+}

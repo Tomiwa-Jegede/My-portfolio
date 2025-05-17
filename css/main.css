@@ -1,236 +1,329 @@
-:root{
-  --primary-color:rgb(16, 16, 16);
-  --primary-color-light:rgb(30, 30, 30);
-  --secondary-color:#1CAC78;
-  --secondary-color-light:#00CC81;
-  --secondary-color-light-opacity:#00cc8117;
-  --grey-white-color: #dadada;
-  --grey-color:#6b7280;
-  --grey-color-opacity: #6b728059;
-  --grey-color-opacity2: #6b72801e;
+:root {
+  /*-----light mode----*/
+  --grey-white-color: #2a2a26;
+  --grey-color: #5a594f;
+  --grey-color-opacity: #5a594f59;
+  --grey-color-opacity2: #5a594f1e;
+  --primary-color: #e0e0d8;
+  --primary-color-light: #c7c7b8;
+  --secondary-color: #8a9b6e;
+  --secondary-color-light: #a8b892;
+  --secondary-color-light-opacity: #a8b89220;
 }
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  color:white;
 }
-html{
+body {
+  color: #1f1f1f;
+}
+body.dark-mode {
+  /*-----dark mode----*/
+  --grey-white-color: #e9e9e0;
+  --grey-color: #a6a28f;
+  --grey-color-opacity: #a6a28f40;
+  --grey-color-opacity2: #a6a28f15;
+  --primary-color: #4a4a42;
+  --primary-color-light: #6b6b60;
+  --secondary-color: #8a9b6e;
+  --secondary-color-light: #a8b892;
+  --secondary-color-light-opacity: #a8b89220;
+  color: #e9e9e0;
+}
+html {
   scroll-behavior: smooth;
 }
-body{
-  font-family:"Poppins", serif;
-  background-color:var(--primary-color);
-  height:100vh;
-  font-size:clamp(1rem,2vw, 1.2rem);
+body {
+  font-family: "Poppins", serif;
+  background-color: var(--primary-color);
+  height: 100vh;
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-main{
-  z-index:500;
-  padding:20px 40px;
+main {
+  z-index: 500;
+  padding: 20px 40px;
   transform: translateY(20px);
-  opacity:0;
-  animation:slidein 5s linear both;
+  opacity: 0;
+  animation: slidein 5s linear both;
   animation-timeline: view(block);
   animation-range: entry 30% cover 50%;
 }
 
-
-
-footer{
-  margin-left:10px;
+footer {
+  margin-left: 10px;
   justify-self: center;
-  width:fit-content;
+  width: fit-content;
 }
-span{
-  color:var(--secondary-color)
+span {
+  color: var(--secondary-color);
 }
-.socials i{
-  display:none;
+.socials i {
+  display: none;
 }
-a{
-  text-decoration:none;
+.socials .mode {
+  display: flex;
+}
+.dark-mode .mode .fa-moon {
+  display: none;
+}
+.socials .mode i {
+  display: flex;
+  color: #e9e9e0;
 }
 
+a {
+  text-decoration: none;
+}
 
 .socials i.fa-download {
   color: black;
 }
 
-.fa-solid{
-  color:black;
+.fa-solid {
+  color: black;
 }
 
-@keyframes slidein{
+@keyframes slidein {
   to {
-    opacity:1;
-    transform:translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes bounce{
-  0%{transform:scale(1)}
-  25%{transform:scale(1.1)}
-  50%{transform:scale(1)}
-  75%{transform:scale(1.05)}
-  100%{transform:scale(1)}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-@keyframes jump{
-  0%{transform:translateY(-8px)}
-  25%{transform:translateY(-12px)}
-  50%{transform:translateY(-8px)}
-  75%{transform:translateY(-10px)}
-  100%{transform:translateY(-8px)}
+@keyframes jump {
+  0% {
+    transform: translateY(-8px);
+  }
+  25% {
+    transform: translateY(-12px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
 }
-
 
 @keyframes translate-in {
-  from{transform:translate(-10%)}
+  from {
+    transform: translate(-10%);
+  }
 }
 
-@media(min-width:640px){
-  .socials i{
-    display:block;
+@media (min-width: 640px) {
+  .socials i {
+    display: block;
     color: var(--secondary-color);
-    margin-left:5px;
-    cursor:pointer;
+    margin-left: 5px;
+    cursor: pointer;
   }
-  .socials button{
-    display:flex;
+  .socials button {
+    display: flex;
   }
-  .socials{
-    display:flex;
-    width:20rem;
-    align-items:center;
-    justify-content:space-between;
-  }
-
-  .animation-container{
-    position:absolute;
-    display:flex;
-    right:0;
-    left:0;
-    justify-content:space-between;
-
-  }
-.animation-container div{
-  margin-right:2rem;
-  height:15rem;
-  width:15rem;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background-color:var(--grey-color);
-}
-.animation-container div:nth-child(1){
-  animation:anime1 20s linear infinite
-
-}
-.animation-container div:nth-child(2){
-  animation:anime2 20s linear infinite
-}
-.animation-container div:nth-child(3){
-  animation:anime3 15s linear infinite
-}
-.animation-container div:nth-child(4){
-  animation:anime4 10s linear infinite
-}
-.animation-container div:nth-child(5){
-  animation:anime5 20s linear infinite
-}
-.animation-container div:nth-child(6){
-  animation:anime6 10s linear infinite
-}
-.animation-container div:nth-child(){
-  margin-right:2rem;
-  height:10rem;
-  width:10rem;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color:var(--grey-color-opacity)
-}
-@keyframes anime1{
-  0%{transform:translateY(-500%);
-    opacity:1
-  }
-  100%{transform:translateY(90%) translateX(700%) rotate(360deg);
-  opacity:0
-  }
-}
-@keyframes anime2{
-  0%{transform:translateX(500%);
-    opacity:0
-  }
-  100%{transform:translateY(-200%) translateX(-500%) rotate(360deg);
-  opacity:1
-  }
-}
-@keyframes anime3{
-  0%{transform:translateY(90%);
-    opacity:0
-  }
-  100%{transform:translateY(-500%)  rotate(360deg);
-  opacity:1
-  }
-}
-@keyframes anime4{
-  0%{transform:translateY(-500%);
-    opacity:1
-  }
-  100%{transform: translateY(90%) rotate(360deg);
-  opacity:0
-  }
-}
-@keyframes anime5{
-  0%{transform:translateX(50%);
-    opacity:0
-  }
-  100%{transform:translateY(-500%) translateX(-700%) rotate(360deg);
-  opacity:1
-  }
-}
-@keyframes anime6{
-  0%{transform:translateX(-700%);
-    opacity:0
-  }
-  100%{transform:translateY(-500%) translateX(50%) rotate(360deg);
-  opacity:1
-  }
-}
-
-main .Experiences-main{
-  display:flex;
-  justify-content:center;
-}
-
-main .Experiences-container{
-  width:50%;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  justify-items: center;
-}
-}
-
-@media(min-width:760px){
-  .project-container{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:1.5rem;
+  .socials {
+    display: flex;
+    width: 20rem;
     align-items: center;
-    height:70vh;
-    padding:0;
-  }
-  .project-content{
-    animation:translate-in .5s ease-in-out;
-    animation-timeline:view();
-    animation-range: entry 50% cover 50%;
-    transition:all .3s ease-in-out;
-  }
-}
-@media(min-width:960px){
-  main .Experiences-container{
-    grid-template-columns:repeat(3,1fr);
+    justify-content: space-between;
   }
 
-  .img-slider{
-    width:50%;
+  .animation-container {
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+  }
+  .animation-container div {
+    margin-right: 2rem;
+    height: 15rem;
+    width: 15rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: var(--grey-color);
+  }
+  .animation-container div:nth-child(1) {
+    animation: anime1 20s linear infinite;
+  }
+  .animation-container div:nth-child(2) {
+    animation: anime2 20s linear infinite;
+  }
+  .animation-container div:nth-child(3) {
+    animation: anime3 15s linear infinite;
+  }
+  .animation-container div:nth-child(4) {
+    animation: anime4 10s linear infinite;
+  }
+  .animation-container div:nth-child(5) {
+    animation: anime5 20s linear infinite;
+  }
+  .animation-container div:nth-child(6) {
+    animation: anime6 10s linear infinite;
+  }
+  .animation-container div:nth-child() {
+    margin-right: 2rem;
+    height: 10rem;
+    width: 10rem;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: var(--grey-color-opacity);
+  }
+  @keyframes anime1 {
+    0% {
+      transform: translateY(-500%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(90%) translateX(700%) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes anime2 {
+    0% {
+      transform: translateX(500%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-200%) translateX(-500%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+  @keyframes anime3 {
+    0% {
+      transform: translateY(90%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-500%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+  @keyframes anime4 {
+    0% {
+      transform: translateY(-500%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(90%) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes anime5 {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-500%) translateX(-700%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+  @keyframes anime6 {
+    0% {
+      transform: translateX(-700%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-500%) translateX(50%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  main .Experiences-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .Experiences-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (min-width: 760px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    height: 70vh;
+    padding: 0;
+  }
+  .project-content {
+    animation: translate-in 0.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (min-width: 960px) {
+  main.page-2 {
+    margin-top: 10rem;
+  }
+  main .Experiences-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .img-slider {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    color: white;
+  }
+  h4 {
+    color: white;
+  }
+  .dark-mode main .what-i-do {
+    color: #e9e9e0;
+  }
+}
+
+@media (min-width: 374px) {
+  main .what-i-do {
+    color: #2a2a26;
+  }
+
+  h1 {
+    color: #2a2a26;
+  }
+
+  main.page-1 h1 {
+    color: #e9e9e0;
+  }
+  main.page-1 h4 {
+    color: #e9e9e0;
+  }
+  .dark-mode h1 {
+    color: #e9e9e0;
+  }
+  .dark-mode main .what-i-do {
+    color: #e9e9e0;
   }
 }

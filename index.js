@@ -8,7 +8,10 @@ const down_arrow = document.querySelector('.fa-angle-down');
 const page4container = document.querySelector('.page-4-container')
 const experiencecount = document.querySelectorAll('.Experiences-container span')
 const container = document.querySelector('.Experiences-container')
-
+const mode = document.querySelector('.mode')
+const darkmode = document.querySelector('.fa-moon')
+const lightmode = document.querySelector('.fa-sun')
+const body = document.querySelector('body')
 //function
 function nextBtnClick() {
   slider_length = imgslider.clientWidth;
@@ -105,3 +108,15 @@ function updateIndicator() {
     indicator[currentIndex].classList.add('active');
   });
 };
+
+mode.addEventListener('click', () => {
+  body.classList.toggle('dark-mode')
+  if (body.classList.contains('dark-mode')) {
+    darkmode.style.display = 'none'
+    lightmode.style.display = 'flex'
+  } else {
+    darkmode.style.display = 'flex'
+    lightmode.style.display = 'none'
+
+  }
+})
