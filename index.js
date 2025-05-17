@@ -120,3 +120,5 @@ mode.addEventListener('click', () => {
 
   }
 })
+
+document.querySelector('.hero_video').removeAttribute('controls');
