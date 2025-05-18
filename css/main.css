@@ -293,7 +293,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   h1 {
     color: white;
   }
@@ -301,11 +301,11 @@ a {
     color: white;
   }
   .dark-mode main .what-i-do {
-    color: #e9e9e0;
+    color: #2a2a26;
   }
 }
 
-@media (min-width: 374px) {
+@media (max-width: 374px) {
   main .what-i-do {
     color: #2a2a26;
   }

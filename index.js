@@ -109,15 +109,27 @@ function updateIndicator() {
   });
 };
 
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === "dark") {
+  body.classList.add('dark-mode');
+  darkmode.style.display = 'none'
+  lightmode.style.display = 'flex'
+}
+else {
+  body.classList.remove('dark-mode');
+  darkmode.style.display = 'flex'
+  lightmode.style.display = 'none'
+}
 mode.addEventListener('click', () => {
   body.classList.toggle('dark-mode')
   if (body.classList.contains('dark-mode')) {
     darkmode.style.display = 'none'
     lightmode.style.display = 'flex'
+    localStorage.setItem('theme', 'dark')
   } else {
     darkmode.style.display = 'flex'
     lightmode.style.display = 'none'
-
+    localStorage.setItem('theme', 'light')
   }
 })
 
